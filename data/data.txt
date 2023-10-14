@@ -1,0 +1,178 @@
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (1, 'Hanoi', '258', '123', 'Quận 1', '100000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (2, 'Ho Chi Minh City', '258', '456', 'Quận 2', '700000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (3, 'Da Nang', '258', '789', 'Quận 3', '500000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (4, 'Hue', '258', '1011', 'Quận 4', '400000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (5, 'Can Tho', '258', '1213', 'Quận 5', '200000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (6, 'Nha Trang', '258', '1415', 'Quận 6', '600000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (7, 'Hanoi', '258', '1617', 'Quận 7', '100000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (8, 'Hue', '258', '1819', 'Quận 8', '400000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (9, 'Ho Chi Minh City', '258', '2021', 'Quận 9', '700000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (10, 'Da Nang', '258', '2223', 'Quận 10', '500000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (11, 'Can Tho', '258', '2425', 'Quận 11', '200000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (12, 'Nha Trang', '258', '2627', 'Quận 12', '600000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (13, 'Hanoi', '258', '2829', 'Quận Binh Thanh', '100000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (14, 'Hue', '258', '3031', 'Quận Tan Binh', '400000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (15, 'Ho Chi Minh City', '258', '3233', 'Quận Go Vap', '700000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (16, 'Da Nang', '258', '3435', 'Quận Phu Nhuan', '500000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (17, 'Can Tho', '258', '3637', 'Quận Thu Duc', '200000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (18, 'Nha Trang', '258', '3839', 'Quận Tan Phu', '600000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (19, 'Hanoi', '258', '4041', 'Quận Binh Tan', '100000');
+INSERT INTO `address` (`address_id`, `city`, `country`, `number`, `street`, `zipcode`) VALUES (20, 'Ho Chi Minh City', '258', '4243', 'Quận Cu Chi', '700000');
+
+INSERT INTO `candidate` (`dod`, `address_id`, `candidate_id`, `phone`, `email`, `full_name`) VALUES ('2002-05-28', '2', '1', '0346676956', 'sonpham28052002@gmail.com', 'Phạm Thanh Sơn');
+INSERT INTO `candidate` (`dod`, `address_id`, `candidate_id`, `phone`, `email`, `full_name`) VALUES ('2000-03-15', '3', '2', '0123456789', 'nguyenhong2000@gmail.com', 'Nguyễn Văn Hồng');
+INSERT INTO `candidate` (`dod`, `address_id`, `candidate_id`, `phone`, `email`, `full_name`) VALUES ('1995-11-20', '4', '3', '0987654321', 'tranminh1995@gmail.com', 'Trần Minh');
+INSERT INTO `candidate` (`dod`, `address_id`, `candidate_id`, `phone`, `email`, `full_name`) VALUES ('1988-07-03', '5', '4', '0777000000', 'lethithu1988@gmail.com', 'Lê Thị Thu');
+INSERT INTO `candidate` (`dod`, `address_id`, `candidate_id`, `phone`, `email`, `full_name`) VALUES ('1999-01-12', '6', '5', '0333999900', 'nguyenduc1999@gmail.com', 'Nguyễn Đức');
+INSERT INTO `candidate` (`dod`, `address_id`, `candidate_id`, `phone`, `email`, `full_name`) VALUES ('1990-09-28', '7', '6', '0666777888', 'hoanglinh1990@gmail.com', 'Hoàng Linh');
+INSERT INTO `candidate` (`dod`, `address_id`, `candidate_id`, `phone`, `email`, `full_name`) VALUES ('2001-04-06', '8', '7', '0988123456', 'phanthanh2001@gmail.com', 'Phan Thanh');
+INSERT INTO `candidate` (`dod`, `address_id`, `candidate_id`, `phone`, `email`, `full_name`) VALUES ('1997-08-17', '9', '8', '0555666777', 'vulinh1997@gmail.com', 'Vũ Linh');
+INSERT INTO `candidate` (`dod`, `address_id`, `candidate_id`, `phone`, `email`, `full_name`) VALUES ('1985-12-10', '10', '9', '0912345678', 'truongthanh1985@gmail.com', 'Trương Thanh');
+INSERT INTO `candidate` (`dod`, `address_id`, `candidate_id`, `phone`, `email`, `full_name`) VALUES ('1998-06-25', '11', '10', '0333222111', 'phamminh1998@gmail.com', 'Phạm Minh');
+
+INSERT INTO `company` (`address_id`, `comp_id`, `about`, `comp_name`, `email`, `phone`, `web_url`) VALUES ('11', '1', 'Một công ty phần mềm hàng đầu tại Việt Nam', 'FPT Software', 'fptsoftware@gmail.com', '0123456789', 'fptsoftware.com');
+INSERT INTO `company` (`address_id`, `comp_id`, `about`, `comp_name`, `email`, `phone`, `web_url`) VALUES ('12', '2', 'Chuyên cung cấp giải pháp phần mềm cho các ngành công nghiệp', 'TMA Solutions', 'tmasolutions@gmail.com', '0987654321', 'tmasolutions.com');
+INSERT INTO `company` (`address_id`, `comp_id`, `about`, `comp_name`, `email`, `phone`, `web_url`) VALUES ('13', '3', 'Xây dựng các ứng dụng di động và web', 'Luxoft Vietnam', 'luxoftvietnam@gmail.com', '0765432109', 'luxoftvietnam.com');
+INSERT INTO `company` (`address_id`, `comp_id`, `about`, `comp_name`, `email`, `phone`, `web_url`) VALUES ('14', '4', 'Phát triển phần mềm chất lượng cao', 'KMS Technology', 'kmstechnology@gmail.com', '0333222111', 'kmstechnology.com');
+INSERT INTO `company` (`address_id`, `comp_id`, `about`, `comp_name`, `email`, `phone`, `web_url`) VALUES ('15', '5', 'Cung cấp dịch vụ phát triển ứng dụng', 'Axon Active', 'axonactive@gmail.com', '0777000000', 'axonactive.com');
+INSERT INTO `company` (`address_id`, `comp_id`, `about`, `comp_name`, `email`, `phone`, `web_url`) VALUES ('16', '6', 'Chuyên về kiểm thử phần mềm', 'LogiGear', 'logigear@gmail.com', '0999888777', 'logigear.com');
+INSERT INTO `company` (`address_id`, `comp_id`, `about`, `comp_name`, `email`, `phone`, `web_url`) VALUES ('17', '7', 'Giải pháp phát triển phần mềm toàn diện', 'Global CyberSoft (GCS)', 'gcs@gmail.com', '0888777666', 'gcs.com');
+INSERT INTO `company` (`address_id`, `comp_id`, `about`, `comp_name`, `email`, `phone`, `web_url`) VALUES ('18', '8', 'Cung cấp dịch vụ phát triển ứng dụng di động', 'NashTech', 'nashtech@gmail.com', '0777999222', 'nashtech.com');
+INSERT INTO `company` (`address_id`, `comp_id`, `about`, `comp_name`, `email`, `phone`, `web_url`) VALUES ('19', '9', 'Chuyên về phát triển phần mềm tùy chỉnh', 'Harvey Nash Vietnam', 'harveynash@gmail.com', '0666777888', 'harveynash.com');
+INSERT INTO `company` (`address_id`, `comp_id`, `about`, `comp_name`, `email`, `phone`, `web_url`) VALUES ('20', '10', 'Chuyên cung cấp dịch vụ phát triển sản phẩm phần mềm', 'Orient Software', 'orientsoftware@gmail.com', '0555999888', 'orientsoftware.com');
+
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('5', '1', 'biết về java core, spring data, hibernate', 'lập trình java spring boots');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('3', '2', 'Kinh nghiệm phát triển ứng dụng di động', 'Lập trình viên di động');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('7', '3', 'Lập trình ứng dụng web', 'Phát triển viên web');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('2', '4', 'Kiến thức về trí tuệ nhân tạo', 'Chuyên viên AI');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('1', '5', 'Phát triển ứng dụng Android', 'Lập trình viên Android');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('4', '6', 'Chuyên về kiểm thử phần mềm', 'Chuyên viên kiểm thử phần mềm');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('10', '7', 'Phát triển sản phẩm phần mềm', 'Phát triển sản phẩm phần mềm');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('5', '8', 'Thiết kế ứng dụng di động', 'Thiết kế viên ứng dụng di động');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('9', '9', 'Phát triển phần mềm tùy chỉnh', 'Phát triển viên phần mềm tùy chỉnh');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('6', '10', 'Chuyên về giải pháp phát triển phần mềm', 'Chuyên gia phát triển phần mềm');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('8', '11', 'Phát triển ứng dụng web', 'Lập trình viên web');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('5', '12', 'Chuyên về kiểm thử phần mềm', 'Chuyên viên kiểm thử phần mềm');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('3', '13', 'Phát triển ứng dụng di động', 'Lập trình viên di động');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('7', '14', 'Xây dựng ứng dụng web', 'Phát triển viên web');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('2', '15', 'Chuyên viên trí tuệ nhân tạo', 'Chuyên viên AI');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('6', '16', 'Thiết kế ứng dụng di động', 'Thiết kế viên ứng dụng di động');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('4', '17', 'Chuyên về phát triển sản phẩm phần mềm', 'Chuyên gia phát triển phần mềm');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('10', '18', 'Lập trình viên phần mềm tùy chỉnh', 'Lập trình viên phần mềm tùy chỉnh');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('1', '19', 'Phát triển giải pháp phần mềm', 'Phát triển viên giải pháp phần mềm');
+INSERT INTO `job` (`company`, `job_id`, `job_desc`, `job_name`) VALUES ('9', '20', 'Chuyên về phát triển phần mềm tự động', 'Chuyên viên phát triển phần mềm tự động');
+
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Programming', '1', 'Java', 'Thành thạo trong lập trình Java');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Programming', '2', 'C++', 'Kỹ năng lập trình C++ cao cấp');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Web Development', '3', 'HTML/CSS', 'Chuyên sâu trong phát triển web với HTML/CSS');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Web Development', '4', 'JavaScript', 'Kinh nghiệm với JavaScript và các thư viện liên quan');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Database Management', '5', 'SQL', 'Thành thạo trong SQL và quản lý cơ sở dữ liệu');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Software Testing', '6', 'Automated Testing', 'Kỹ năng kiểm thử tự động phần mềm');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Artificial Intelligence', '7', 'Machine Learning', 'Kiến thức về Machine Learning và trí tuệ nhân tạo');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Mobile App Development', '8', 'Android Development', 'Phát triển ứng dụng Android');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Quality Assurance', '9', 'Manual Testing', 'Kiểm thử phần mềm thủ công');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Web Development', '10', 'React.js', 'Kỹ năng phát triển ứng dụng web bằng React.js');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Programming', '11', 'Python', 'Kỹ năng lập trình Python');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Database Management', '12', 'MongoDB', 'Quản lý cơ sở dữ liệu MongoDB');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Web Development', '13', 'Vue.js', 'Phát triển ứng dụng web bằng Vue.js');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Mobile App Development', '14', 'iOS Development', 'Phát triển ứng dụng iOS');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Quality Assurance', '15', 'Load Testing', 'Kiểm thử hiệu suất phần mềm');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Artificial Intelligence', '16', 'Deep Learning', 'Kiến thức về Deep Learning');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Data Analysis', '17', 'Data Mining', 'Kỹ năng khai thác dữ liệu');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Cybersecurity', '18', 'Ethical Hacking', 'Kỹ năng bảo mật và hack đạo đức');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('Project Management', '19', 'Agile Scrum', 'Quản lý dự án theo phương pháp Agile Scrum');
+INSERT INTO `skill` (`skill_type`, `skill_id`, `skill_name`, `skill_desc`) VALUES ('DevOps', '20', 'Docker', 'Kỹ năng sử dụng Docker cho việc triển khai ứng dụng');
+
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (4, '1', '1', 'có kinh nghiệm lập trình java, spring, html, js');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (5, '2', '2', 'Kỹ năng lập trình C++ cao cấp');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (3, '3', '3', 'Chuyên sâu trong phát triển web với HTML/CSS');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (4, '4', '4', 'Kinh nghiệm với JavaScript và các thư viện liên quan');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (5, '5', '5', 'Thành thạo trong SQL và quản lý cơ sở dữ liệu');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (3, '6', '6', 'Kỹ năng kiểm thử tự động phần mềm');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (5, '7', '7', 'Kiến thức về Machine Learning và trí tuệ nhân tạo');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (4, '8', '8', 'Phát triển ứng dụng Android');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (3, '9', '9', 'Kiểm thử phần mềm thủ công');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (4, '10', '10', 'Kỹ năng phát triển ứng dụng web bằng React.js');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (3, '1', '11', 'Kỹ năng lập trình Python');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (4, '2', '12', 'Quản lý cơ sở dữ liệu MongoDB');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (3, '3', '13', 'Phát triển ứng dụng web bằng Vue.js');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (4, '4', '14', 'Phát triển ứng dụng iOS');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (3, '5', '15', 'Kiểm thử hiệu suất phần mềm');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (5, '6', '16', 'Kiến thức về Deep Learning');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (4, '7', '17', 'Kỹ năng khai thác dữ liệu');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (5, '8', '18', 'Kỹ năng bảo mật và hack đạo đức');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (3, '9', '19', 'Quản lý dự án theo phương pháp Agile Scrum');
+INSERT INTO `candidate_skill` (`skill_level`, `candidate_id`, `skill_id`, `more_infos`) VALUES (4, '10', '20', 'Kỹ năng sử dụng Docker cho việc triển khai ứng dụng');
+
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2018-03-15', '2021-06-20', '1', '1', 'Software Developer', 'ABC Tech', 'Worked on Java and web development projects.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2017-06-10', '2019-09-30', '2', '2', 'C++ Programmer', 'XYZ Solutions', 'Developed C++ applications for clients.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2015-09-01', '2020-12-15', '3', '3', 'Web Developer', 'WebDev Inc.', 'Designed and implemented web applications using HTML/CSS and JavaScript.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2010-08-25', '2017-11-30', '4', '4', 'Project Manager', 'Tech Solutions Group', 'Managed software development projects and teams.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2018-02-10', '2021-04-25', '5', '5', 'Quality Assurance Analyst', 'QA Testers Inc.', 'Conducted manual testing and reported issues.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2010-01-05', '2016-12-30', '6', '6', 'Mobile App Developer', 'Mobile Apps Ltd.', 'Developed Android and iOS applications.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2018-06-20', '2021-07-10', '7', '7', 'Machine Learning Engineer', 'AI Innovations', 'Worked on machine learning and data analysis projects.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2015-03-10', '2020-09-30', '8', '8', 'Data Analyst', 'Data Insight Corp', 'Analyzed data and created reports for clients.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2007-07-15', '2012-12-31', '9', '9', 'Ethical Hacker', 'CyberSec Pro', 'Performed ethical hacking and security assessments.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2016-09-15', '2021-03-20', '10', '10', 'Scrum Master', 'AgileSoft Inc.', 'Led Agile Scrum teams and managed projects.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2019-04-10', '2022-07-25', '1', '11', 'Front-End Developer', 'WebTech Solutions', 'Developed user interfaces using React.js and Angular.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2016-07-01', '2018-12-15', '2', '12', 'Database Administrator', 'DataCo Enterprises', 'Managed and optimized SQL databases.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2018-10-05', '2021-03-30', '3', '13', 'Full-Stack Developer', 'TechStack Inc.', 'Worked on end-to-end web development projects.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2014-05-15', '2019-09-10', '4', '14', 'Software Engineer', 'SoftwareTech Solutions', 'Developed desktop applications using Java.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2019-03-01', '2022-06-30', '5', '15', 'Automation Tester', 'TestAutomation Inc.', 'Created and maintained automated test scripts.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2015-08-10', '2019-12-20', '6', '16', 'iOS App Developer', 'iOS Apps Ltd.', 'Developed iOS applications for various clients.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2017-07-20', '2021-09-10', '7', '17', 'AI Researcher', 'AI Research Labs', 'Conducted research in deep learning and AI algorithms.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2014-03-10', '2020-05-30', '8', '18', 'Data Scientist', 'Data Insights Ltd.', 'Performed data analysis and predictive modeling.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2010-09-05', '2015-12-31', '9', '19', 'Security Consultant', 'Cyber Defense Inc.', 'Provided cybersecurity consulting and audits.');
+INSERT INTO `experience` (`from_date`, `to_date`, `candidate_id`, `experience_id`, `role`, `company_name`, `work_desc`)
+VALUES ('2018-11-15', '2021-05-25', '10', '20', 'DevOps Engineer', 'DevOps Innovations', 'Implemented Docker for containerization and CI/CD pipelines.');
+
+INSERT INTO `job_skill` (`skill_level`, `job_id`, `skill_id`, `more_infos`) VALUES 
+('3', '1', '1', 'có kinh nghiêm lập trình java trên 3 năm'), 
+('4', '1', '10', 'lập trình frontend với reactJS'), 
+('1', '15', '11', 'Biết python cơ bản'), 
+('3', '15', '7', 'có kinh nghiệm về Machine Learning'), 
+('2', '10', '19', 'có kinh nghiệm tạo quy trình phát triền phần mềm'), 
+('3', '6', '6', 'có kinh nghiệm về Automated Testing'), 
+('2', '6', '15', 'có kinh nghiệm về Load Testing'), 
+('3', '12', '6', 'có kinh nghiệm về Automated Testing'), 
+('2', '12', '15', 'có kinh nghiệm về Load Testing'), 
+('5', '20', '7', 'có kinh nghiệm về Machine Learning'), 
+('5', '17', '18', 'có kinh nghiệm về tấn công phần mềm'), 
+('3', '2', '8', 'có kinh nghiệm lập trình app andriod'), 
+('3', '2', '1', 'có kinh nghiệm lập trình app andriod với java'), 
+('2', '4', '11', 'có kình nghiệm lập trình python'), 
+('3', '4', '7', 'từng lập trình với Machine Learning'), 
+('6', '18', '2', 'có kinh nghiệm lập trình C++'), 
+('4', '3', '3', 'có kinh nghiệm lập trình HTML/CSS'), 
+('4', '3', '4', 'có kinh nghiệm lập trình FrondEnd với js'), 
+('3', '3', '13', 'có kinh nghiệm lập trình FrondEnd với vueJS'), 
+('4', '3', '10', 'có kinh nghiệm lập trình FrondEnd với reacJS'), 
+('7', '19', '18', 'có kinh nghiêm phòng chống tấn công mạng '), 
+('3', '9', '2', 'có kinh nghiệm C++'), 
+('4', '7', '19', 'Có kinh nghiệm lập quy trình phát triền'), 
+('3', '5', '1', 'có kinh nghiệm lập trinh java'), 
+('4', '16', '1', 'có kinh nghiệp lập trình ứng dụng di động với java'), 
+('3', '11', '4', 'phát triền web với js'), 
+('3', '8', '1', 'biết thiết kế và lập trình ứng dụng di động java'), 
+('4', '16', '4', 'biết thiết kế và lập trình ứng dụng di động React Native'), 
+('4', '16', '14', 'biết thiết kế và lập trình ứng dụng di động swift'), 
+('3', '14', '20', 'làm việc với Docker');
