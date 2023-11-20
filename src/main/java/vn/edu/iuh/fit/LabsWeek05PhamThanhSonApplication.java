@@ -1,8 +1,7 @@
-package vn.edu.iuh.fit.BackEnd;
+package vn.edu.iuh.fit;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
 public class LabsWeek05PhamThanhSonApplication {

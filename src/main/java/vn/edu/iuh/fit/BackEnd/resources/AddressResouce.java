@@ -8,9 +8,10 @@ import vn.edu.iuh.fit.BackEnd.reponsitories.AddressRepository;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "http://localhost:19006/")
 @RestController()
 @RequestMapping("/address")
-public class AddressResouce {
+public class AddressResouce{
 
     @Autowired
     private AddressRepository repository;

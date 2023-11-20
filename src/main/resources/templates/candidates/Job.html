@@ -28,32 +28,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<h1 class="text-center">LIST CANDIDATES</h1>
+<h1 class="text-center">LIST Job</h1>
 <div class="inline" style="display: flex;align-items: center ; justify-content: center;width: 100%">
-    <a href="/CandidateController/listJob">List Job</a>
+    <a href="/CandidateController/addJob">List Job</a>
 </div>
 <table class="table table-dark">
     <thead>
     <tr>
         <th scope="col">#</th>
         <th scope="col">Name</th>
-        <th scope="col">DOB</th>
-        <th scope="col">Phone</th>
-        <th scope="col">Email</th>
-        <th scope="col">Address</th>
+        <th scope="col">Company Name</th>
+        <th scope="col">Description</th>
         <th></th>
     </tr>
     </thead>
     <tbody>
-    <tr th:each="candidate,state:${listCandidate}">
-        <th th:utext="${state.count}"></th>
-        <th th:utext="${candidate.getFullName()}"></th>
-        <th th:utext="${candidate.getDod()}"></th>
-        <th th:utext="${candidate.getPhone()}"></th>
-        <th th:utext="${candidate.getEmail()}"></th>
-        <th th:utext="${candidate.getAddress()}"></th>
-        <th><a th:href="@{ShowMore/{id}(id=${candidate.getId()})}">show more...</a></th>
-    </tr>
+        <tr th:each="job,state:${listCandidate}">
+            <th th:utext="${state.count}"></th>
+            <th th:utext="${job.getJobName()}"></th>
+            <th th:utext="${job.getCompany().getCompName()}"></th>
+            <th th:utext="${job.getJobDesc()}"></th>
+            <th><a th:href="@{ShowMoreJob/{id}(id=${job.getId()})}">Show more...</a></th>
+        </tr>
     </tbody>
 </table>
 </body>

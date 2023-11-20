@@ -40,7 +40,6 @@ public class CandidateResource {
     public boolean delete(@PathVariable("id") long id)
     {
         repository.deleteById(id);
-        if (repository.findById(id) !=null) return true;
-        return false;
+        return repository.findById(id).isPresent();
     }
 }

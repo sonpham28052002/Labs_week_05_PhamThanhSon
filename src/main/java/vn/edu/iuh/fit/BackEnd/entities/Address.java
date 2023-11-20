@@ -31,5 +31,8 @@ public class Address {
     @Column(length = 150)
     private String street;
 
-
+    @Override
+    public String toString() {
+        return number+", "+zipcode+", "+street +", "+city+", "+country;
+    }
 }

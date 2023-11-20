@@ -27,11 +27,27 @@
             crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-<h1 class="text-center">LIST CANDIDATES</h1>
-<div class="inline" style="display: flex;align-items: center ; justify-content: center;width: 100%">
-    <a href="/CandidateController/listJob">List Job</a>
+<body style="display: block;justify-content: center;align-items: center; padding: 50px">
+<div style="margin-left: 25%;width: 50%; justify-content: center;align-items: center ;padding: 20px;margin-top: 50px;margin-bottom: 30px; border: 1px black solid; border-radius: 20px">
+    <h3 style="text-align: center;color: red" ><span  th:utext="${jobs.getCompany().getCompName()}"></span></h3>
+    <h5 >About: <span  th:utext="${jobs.getCompany().getAbout()}"></span></h5>
+    <h5 >Email: <span  th:utext="${jobs.getCompany().getEmail()}"></span></h5>
+    <h5 >Phone: <span  th:utext="${jobs.getCompany().getPhone()}"></span></h5>
+    <h5 >Address: <span th:utext="${jobs.getCompany().getAddress()}"></span></h5>
+    <h5 >Web: <a th:href="${jobs.getCompany().getWebURL()}" th:utext="${jobs.getCompany().getWebURL()}"></a></h5>
+    <h5 >Job: <span th:utext="${jobs.getJobName()}"></span></h5>
+    <h5>Skill require: </h5>
+    <ul th:each="jobskill,state:${jobs.getJobSkills()}">
+        <li> <span th:utext="${jobskill.getSkill().getSkillName()}"></span>
+            <ul>
+                <li>Info: <span th:utext="${jobskill.getMoreInfos()}"></span></li>
+                <li>Level: <span th:utext="${jobskill.getSkillLevel()}"></span></li>
+            </ul>
+        </li>
+    </ul>
+
 </div>
+<h1>Gợi ý Candidate: </h1>
 <table class="table table-dark">
     <thead>
     <tr>
@@ -41,7 +57,7 @@
         <th scope="col">Phone</th>
         <th scope="col">Email</th>
         <th scope="col">Address</th>
-        <th></th>
+        <th scope="col">Skills</th>
     </tr>
     </thead>
     <tbody>
@@ -52,7 +68,7 @@
         <th th:utext="${candidate.getPhone()}"></th>
         <th th:utext="${candidate.getEmail()}"></th>
         <th th:utext="${candidate.getAddress()}"></th>
-        <th><a th:href="@{ShowMore/{id}(id=${candidate.getId()})}">show more...</a></th>
+        <th><a th:href="@{/CandidateController/ShowMore/{id}(id=${candidate.getId()})}">show more...</a></th>
     </tr>
     </tbody>
 </table>

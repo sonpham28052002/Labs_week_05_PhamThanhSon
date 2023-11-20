@@ -37,7 +37,7 @@ public class Candidate {
     @JoinColumn(name = "address_id")
     private Address address;
 
-    @OneToMany(mappedBy = "candidate",cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "candidate",cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonManagedReference
     private List<CandidateSkill> candidateSkills;
 

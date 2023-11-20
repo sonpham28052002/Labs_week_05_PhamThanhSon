@@ -1,15 +1,19 @@
 package vn.edu.iuh.fit.BackEnd.entities;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 import vn.edu.iuh.fit.BackEnd.ids.JobSkillID;
 
 import java.io.Serializable;
 
 @Entity
 @Table(name = "job_skill")
-@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 @IdClass(JobSkillID.class)
+
 public class JobSkill implements Serializable {
     @Id
     @ManyToOne
@@ -25,4 +29,13 @@ public class JobSkill implements Serializable {
     private String SkillLevel;
     @Column(name = "more_infos" , length = 1000)
     private String moreInfos;
+
+    @Override
+    public String toString() {
+        return "JobSkill{" +
+                ", skill=" + skill +
+                ", SkillLevel='" + SkillLevel + '\'' +
+                ", moreInfos='" + moreInfos + '\'' +
+                '}';
+    }
 }

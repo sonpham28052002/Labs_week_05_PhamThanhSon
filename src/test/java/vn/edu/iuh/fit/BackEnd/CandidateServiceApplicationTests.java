@@ -13,7 +13,8 @@ public class CandidateServiceApplicationTests {
     private CandidateRepository repository;
     @Test
     void findAll(){
-        repository.findAll().forEach(System.out::println);
+        long id =1;
+        repository.findById(id).get().getCandidateSkills().forEach(System.out::println);
     }
 
 }

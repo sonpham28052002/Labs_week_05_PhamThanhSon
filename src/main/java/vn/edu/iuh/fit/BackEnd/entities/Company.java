@@ -1,14 +1,18 @@
 package vn.edu.iuh.fit.BackEnd.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Table(name = "company")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(exclude = {"comp_id"})
 public class Company {
     @Id
@@ -36,4 +40,16 @@ public class Company {
 
     @OneToMany(mappedBy = "company" , cascade = CascadeType.ALL)
     private List<Job> jobList;
+
+    @Override
+    public String toString() {
+        return "Company{" +
+                "comp_id=" + comp_id +
+                ", about='" + about + '\'' +
+                ", email='" + email + '\'' +
+                ", compName='" + compName + '\'' +
+                ", phone='" + phone + '\'' +
+                ", webURL='" + webURL + '\'' +
+                '}';
+    }
 }

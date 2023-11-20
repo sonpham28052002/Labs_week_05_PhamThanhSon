@@ -1,14 +1,20 @@
 package vn.edu.iuh.fit.BackEnd.entities;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "job")
-@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 @EqualsAndHashCode(exclude = {"id"})
-public class Job {
+public class Job implements Serializable {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "job_id" , length = 20)
     private long id;
@@ -22,4 +28,19 @@ public class Job {
 
     @Column(name = "job_desc" , length = 4000)
     private String jobDesc;
+
+    @OneToMany(mappedBy = "job")
+    private List<JobSkill> jobSkills;
+
+
+    @Override
+    public String toString() {
+        return "Job{" +
+                "id=" + id +
+                ", company=" + company +
+                ", jobName='" + jobName + '\'' +
+                ", jobDesc='" + jobDesc + '\'' +
+                ", jobSkills=" + jobSkills +
+                '}';
+    }
 }
